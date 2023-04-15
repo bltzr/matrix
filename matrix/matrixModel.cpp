@@ -8,11 +8,17 @@ void matrix::operator()(halp::tick t)
   for(int i = 0; i < inputs.audio.channels; i++)
   {
     auto* in = inputs.audio[i];
-    auto* out = outputs.audio[i];
-
-    for(int j = 0; j < t.frames; j++)
+    for(int k = 0; k < outputs.audio.channels; k++)
     {
-      out[j] = inputs.gain * in[j];
+      auto* weight = (inputs.weights.channels > k) ?
+            inputs.weights[k] : inputs.weights[inputs.weights.channels-1];
+
+      auto* out = outputs.audio[k];
+
+      for(int j = 0; j < t.frames; j++)
+      {
+        out[j] = inputs.gain * weight[j] * in[j];
+      }
     }
   }
 }

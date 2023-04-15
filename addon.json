@@ -3,7 +3,7 @@
   "name": "matrix",
   "raw_name": "matrix",
   "version": "1.0",
-  "kind": "addon",
+  "kind": "Audio",
   "short": "audio matrix add-on",
   "long": "This addon provides an audio matrix",
   "small": "https://raw.githubusercontent.com/OSSIA/score-addon-tutorial/master/Deployment/icon.png",

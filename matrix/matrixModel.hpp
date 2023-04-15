@@ -10,9 +10,9 @@ namespace Example
 class matrix
 {
 public:
-  halp_meta(name, "My Avendish Gain")
+  halp_meta(name, "matrix")
   halp_meta(category, "Audio")
-  halp_meta(c_name, "my_gain")
+  halp_meta(c_name, "matrix")
   halp_meta(uuid, "359C787C-E600-48E5-A6E6-AA83E94FCDF4")
 
   // Define inputs and outputs ports.
@@ -20,7 +20,9 @@ public:
   struct ins
   {
     halp::dynamic_audio_bus<"Input", double> audio;
-    halp::knob_f32<"Weight", halp::range{.min = 0., .max = 10., .init = 0.5}> gain;
+    halp::dynamic_audio_bus<"Input", double> weights;
+    //halp::val_port<"Weights", std::vector<float>> weights;
+    halp::knob_f32<"Gain", halp::range{.min = 0., .max = 10., .init = 1.}> gain;
   } inputs;
 
   struct
