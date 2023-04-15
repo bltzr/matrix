@@ -1,0 +1,11 @@
+{
+  "src": "<url to the .zip file created by the release script>",
+  "name": "matrix",
+  "raw_name": "matrix",
+  "version": "1.0",
+  "kind": "addon",
+  "short": "audio matrix add-on",
+  "long": "This addon provides an audio matrix",
+  "small": "https://raw.githubusercontent.com/OSSIA/score-addon-tutorial/master/Deployment/icon.png",
+  "key": "BDD021EE-715B-4F8A-896A-C91CA3058F23"
+}
