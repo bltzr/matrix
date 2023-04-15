@@ -21,8 +21,8 @@ public:
   struct ins
   {
     halp::dynamic_audio_bus<"Input", double> audio;
-    halp::dynamic_audio_bus<"Input", double> weights;
-    //halp::val_port<"Weights", std::vector<float>> weights;
+    //halp::dynamic_audio_bus<"Input", double> weights;
+    halp::val_port<"Weights", std::vector<float>> weights;
     halp::knob_f32<"Gain", halp::range{.min = 0., .max = 10., .init = 1.}> gain;
   } inputs;
 
