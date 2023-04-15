@@ -3,6 +3,7 @@
 #include <halp/audio.hpp>
 #include <halp/controls.hpp>
 #include <halp/meta.hpp>
+#include <vector>
 
 namespace Example
 {
