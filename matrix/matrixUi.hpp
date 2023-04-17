@@ -1,7 +1,7 @@
 #pragma once
 #include <matrix/matrixModel.hpp>
 #include <halp/layout.hpp>
-
+/*
 namespace Example
 {
 struct matrix::ui
@@ -17,3 +17,4 @@ struct matrix::ui
   halp::item<&ins::gain> gain;
 };
 }
+*/

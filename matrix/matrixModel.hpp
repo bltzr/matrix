@@ -12,7 +12,7 @@ class matrix
 {
 public:
   halp_meta(name, "matrix")
-  halp_meta(category, "Audio")
+  halp_meta(category, "Audio/Spatialization")
   halp_meta(c_name, "matrix")
   halp_meta(uuid, "359C787C-E600-48E5-A6E6-AA83E94FCDF4")
 
@@ -44,7 +44,7 @@ public:
   void operator()(halp::tick t);
 
   // UI is defined in another file to keep things clear.
-  struct ui;
+  ///struct ui;
 };
 
 }
